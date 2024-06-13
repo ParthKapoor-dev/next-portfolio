@@ -25,9 +25,9 @@ import { IconCaretDownFilled } from "@tabler/icons-react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
 
-
 import CreateNextJsPic1 from "@/public/ProjectImages/create-next-js-1.png";
 import CreateNextJsPic2 from "@/public/ProjectImages/create-next-js-2.png"
+import Link from "next/link";
 
 export const ProjectScroll = ({
   showGradient,

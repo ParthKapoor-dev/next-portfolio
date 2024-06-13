@@ -1,18 +1,25 @@
 import { ProjectPinCard } from "@/components/HomePage/ProjectPinCard";
 import { ProjectScroll } from "@/components/AcertinityUi/ProjectScroll";
+import Link from "next/link";
+import { OlderProjects } from "../HomePage/OlderProjects";
+import { LinkPreview } from "../AcertinityUi/LinkPreview";
 
 export default function ProjectSection() {
   return (
-    <div className="flex py-[8rem] h-[300vh] justify-center items-center flex-col gap-[4rem]">
+    <div className="flex py-[8rem] h-[400vh] justify-center items-center flex-col gap-[4rem]">
 
       <ProjectScroll title={ProjectScrollTitle} />
 
-      <div className="z-20 bg-white h-fit w-full flex ">
+      <div className="z-20 bg-white pt-[10rem] w-full flex ">
 
         {ProjectDetails.map((item) => (
           <ProjectPinCard {...item} />
         ))}
 
+      </div>
+
+      <div className="z-10 bg-white  w-full ">
+        <OlderProjects />
       </div>
 
     </div>
@@ -21,7 +28,11 @@ export default function ProjectSection() {
   )
 }
 
-const ProjectScrollTitle = "Meet my latest Next JS Project. npx @devwizz/create-next-js"
+const ProjectScrollTitle = (
+  <div>
+    Meet my latest Next JS Project. <LinkPreview url='https://devwizz-nextjs.vercel.app'  className="underline underline-offset-6"> npx @devwizz/create-next-js </LinkPreview>
+  </div>
+)
 
 
 const ProjectDetails = [

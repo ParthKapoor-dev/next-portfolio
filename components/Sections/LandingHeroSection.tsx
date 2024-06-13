@@ -11,7 +11,7 @@ export default function LandingHeroSection() {
         <MeteorsCard title={"About Me"} />
         <MeteorsCard title={"Projects"} />
         <MeteorsCard title={"Contact Me"} />
-        <MeteorsCard title={"Awards"} />
+        {/* <MeteorsCard title={"Awards"} /> */}
       </div>
 
     </div>

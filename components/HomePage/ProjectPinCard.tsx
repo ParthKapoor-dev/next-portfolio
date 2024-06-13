@@ -13,7 +13,7 @@ interface ProjectPinCardProps {
 
 export function ProjectPinCard({ title, href, linkTitle, description }: ProjectPinCardProps) {
   return (
-    <Link target="_blank" href={href} className="h-[40rem] w-full flex items-center justify-center ">
+    <Link target="_blank" href={href} className="h-[30rem] w-full flex items-center justify-center ">
       <PinContainer
         title={linkTitle}
         href={href}
