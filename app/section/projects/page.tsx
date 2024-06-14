@@ -1,8 +1,9 @@
 import { ProjectPinCard } from "@/components/HomePage/ProjectPinCard";
 import { ProjectScroll } from "@/components/AcertinityUi/ProjectScroll";
 import Link from "next/link";
-import { OlderProjects } from "../HomePage/OlderProjects";
-import { LinkPreview } from "../AcertinityUi/LinkPreview";
+import { OlderProjects } from "@/components/HomePage/OlderProjects";
+import { LinkPreview } from "@/components/AcertinityUi/LinkPreview";
+
 
 export default function ProjectSection() {
   return (
@@ -30,7 +31,7 @@ export default function ProjectSection() {
 
 const ProjectScrollTitle = (
   <div>
-    Meet my latest Next JS Project. <LinkPreview url='https://devwizz-nextjs.vercel.app'  className="underline underline-offset-6"> npx @devwizz/create-next-js </LinkPreview>
+    Meet my latest Next JS Project. <LinkPreview url='https://devwizz-nextjs.vercel.app' className="underline underline-offset-6"> npx @devwizz/create-next-js </LinkPreview>
   </div>
 )
 

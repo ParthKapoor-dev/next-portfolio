@@ -3,7 +3,7 @@ import { TechStackCloud } from "@/components/HomePage/TechStackCloud";
 
 export default function AboutMeSection() {
   return (
-    <div className="flex py-[8rem] h-[300vh] justify-center items-center flex-col gap-[4rem]">
+    <div className="flex h-[300vh] justify-center items-center flex-col gap-[4rem]">
 
       <AboutMeReveal text={aboutMeText} />
 
