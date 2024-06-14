@@ -18,4 +18,4 @@ export default function AboutMeSection() {
   )
 }
 
-const aboutMeText = "Hi I am Parth Kapoor . Backend App Dev @Talecto || SSoC'24 || MERN Stack & Next JS Web Dev || React Native Expo App Dev || Junior Year COE undergrad @TIET'26"
+const aboutMeText = "Hi I am Parth Kapoor . Backend App Dev @Talecto || Open Source Contributor @SSoC'24 || MERN Stack & Next JS Web Dev || React Native Expo App Dev || Junior Year COE undergrad @TIET'26"

@@ -62,7 +62,7 @@ const ClipPathLinks = ({ links }: HoverLinksProps) => {
       </div>
       <div className="grid grid-cols-4 divide-x divide-neutral-900 dark:divide-white">
         <LinkBox Icon={SiGmail} href={links.gmail} />
-        <LinkBox Icon={MdDescription} href={links.resume} />
+        <LinkBox Icon={MdDescription} href={links.resume} rel="noopener noreferrer" />
         <LinkBox Icon={SiLeetcode} href={links.leetcode} />
         <DiscordLinkBox Icon={SiDiscord} userName={links.discord} />
       </div>
@@ -100,7 +100,7 @@ const EXIT_KEYFRAMES: KeyframeMap = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const   LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
+const LinkBox = ({ Icon, href  , rel}: { Icon: IconType; href: string; rel? : string }) => {
   const [scope, animate] = useAnimate();
 
   const getNearestSide = (e: MouseEvent) => {
@@ -153,6 +153,7 @@ const   LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
     <Link
       href={href}
       target="_blank"
+      // rel={rel || ""}
       onMouseEnter={(e) => {
         handleMouseEnter(e);
       }}
