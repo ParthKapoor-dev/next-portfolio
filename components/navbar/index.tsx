@@ -9,7 +9,7 @@ import { useTheme } from "next-themes";
 
 export default function NavbarMenu() {
   return (
-    <Navbar className="top-2" />
+    <Navbar className="top-2 max-md:top-4" />
   );
 }
 
@@ -28,7 +28,7 @@ function Navbar({ className }: { className?: string }) {
 
   return (
     <div
-      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+      className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 max-md:px-2", className)}
     >
       <Menu setActive={setActive}>
 
@@ -43,12 +43,12 @@ function Navbar({ className }: { className?: string }) {
         <div className="text-lg flex justify-center items-center" onClick={handleTheme}>
           {theme == "light" ? (
             <>
-              <MdOutlineLightMode className="h-6 w-6" />
+              <MdOutlineLightMode className="h-6 w-6 max-md:h-4 max-md:w-4" />
             </>
 
           ) : (
             <>
-              <MdDarkMode className="h-6 w-6 " />
+              <MdDarkMode className="h-6 w-6 max-md:h-4 max-md:w-4" />
             </>
           )}
         </div>

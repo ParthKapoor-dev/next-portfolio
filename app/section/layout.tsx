@@ -11,7 +11,7 @@ export default function SectionLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="px-[16rem] py-[6rem]">
+    <div className="px-[16rem] py-[6rem] max-md:px-8 ">
       {children}
     </div>
   );

@@ -68,14 +68,14 @@ export const ProjectScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[200vh]  flex flex-col items-center py-0 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50"
+      className="min-h-[200vh] max-md:min-h-[120vh] flex flex-col items-center py-0 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100 scale-[0.6] sm:scale-50"
     >
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center"
+        className="dark:text-white text-neutral-800 max-md:text-4xl text-3xl font-bold mb-20 text-center"
       >
         {title || (
           <span>

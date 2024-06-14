@@ -8,9 +8,9 @@ interface meteorsCardProps {
 
 export function MeteorsCard({title , link} : meteorsCardProps) {
   return (
-    <Link href={link} className="relative flex h-full w-full max-w-[32rem] min-w-[20rem] items-center justify-center overflow-hidden rounded-lg border bg-background p-20 px-16 md:shadow-xl cursor-pointer dark:bg-neutral-700/[0.3]">
+    <Link href={link} className="relative flex h-full w-full max-w-[32rem] min-w-[20rem] items-center justify-center overflow-hidden rounded-lg border bg-background p-20 px-16 md:shadow-xl cursor-pointer dark:bg-neutral-700/[0.3] max-md:min-w-0 max-md:p-14">
       <Meteors number={50} />
-      <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter text-black dark:text-white w-full">
+      <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter text-black dark:text-white w-full max-md:text-2xl">
         {title}
       </p>
     </Link>

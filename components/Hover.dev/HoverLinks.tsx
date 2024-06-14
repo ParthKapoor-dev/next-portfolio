@@ -42,9 +42,9 @@ export const HoverLinks = ({ links }: HoverLinksProps) => {
 
 
   return (
-    <div className="bg-neutral-50 dark:bg-[#020817] px-4 py-12">
+    <div className="bg-neutral-50 dark:bg-[#020817] py-12">
       <div className="mx-auto max-w-7xl">
-        <div className="font-semibold text-5xl mb-12">
+        <div className="font-semibold text-5xl mb-12 max-md:text-2xl">
           My Links
         </div>
         <ClipPathLinks links={links} />
@@ -161,7 +161,7 @@ const   LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
       }}
       className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
     >
-      <Icon className="text-xl sm:text-3xl lg:text-4xl" />
+      <Icon className="text-4xl max-md:text-2xl" />
 
       <div
         ref={scope}
@@ -170,7 +170,7 @@ const   LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
         }}
         className="absolute inset-0 grid place-content-center dark:bg-white dark:text-neutral-700 bg-neutral-900 text-white"
       >
-        <Icon className="text-xl sm:text-3xl md:text-4xl" />
+        <Icon className="text-4xl " />
       </div>
     </Link>
   );
