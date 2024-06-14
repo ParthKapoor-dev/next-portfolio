@@ -26,8 +26,6 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 
 import CreateNextJsPic1 from "@/public/ProjectImages/create-next-js-1.png";
-import CreateNextJsPic2 from "@/public/ProjectImages/create-next-js-2.png"
-import Link from "next/link";
 
 export const ProjectScroll = ({
   showGradient,
@@ -132,7 +130,7 @@ export const Lid = ({
   scaleY: MotionValue<number>;
   rotate: MotionValue<number>;
   translate: MotionValue<number>;
-  src?: string;
+  src: any;
 }) => {
   return (
     <div className="relative [perspective:800px]">
@@ -168,7 +166,7 @@ export const Lid = ({
       >
         <div className="absolute inset-0 bg-[#272729] rounded-lg" />
         <Image
-          src={src as string}
+          src={src}
           alt="aceternity logo"
           fill
           className="object-cover object-left-top absolute rounded-lg inset-0 h-full w-full"
