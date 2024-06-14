@@ -11,7 +11,7 @@ export default function ProjectSection() {
 
       <ProjectScroll title={ProjectScrollTitle} />
 
-      <div className="z-20 bg-white pt-[10rem] w-full flex ">
+      <div className="z-20 bg-white dark:bg-[#020817] pt-[10rem] w-full flex ">
 
         {ProjectDetails.map((item) => (
           <ProjectPinCard {...item} />
@@ -19,7 +19,7 @@ export default function ProjectSection() {
 
       </div>
 
-      <div className="z-10 bg-white  w-full ">
+      <div className="z-10 bg-white dark:bg-[#020817]  w-full ">
         <OlderProjects />
       </div>
 

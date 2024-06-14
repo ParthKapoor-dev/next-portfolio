@@ -2,40 +2,26 @@
 
 import React, { MouseEvent } from "react";
 import {
-  SiAdobe,
-  SiApple,
   SiDiscord,
-  SiFacebook,
   SiGithub,
   SiGmail,
-  SiGoogle,
   SiInstagram,
   SiLeetcode,
   SiLinkedin,
-  SiShopify,
-  SiSoundcloud,
   SiSpotify,
-  SiTiktok,
   SiTwitter,
 } from "react-icons/si";
 import { useAnimate } from "framer-motion";
 import { IconType } from "react-icons";
-import Link from "next/link";
 import { MdDescription } from "react-icons/md";
 
-import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 
+import Link from "next/link";
 
 
 interface HoverLinksProps {
@@ -53,8 +39,10 @@ interface HoverLinksProps {
 }
 
 export const HoverLinks = ({ links }: HoverLinksProps) => {
+
+
   return (
-    <div className="bg-neutral-50 px-4 py-12">
+    <div className="bg-neutral-50 dark:bg-[#020817] px-4 py-12">
       <div className="mx-auto max-w-7xl">
         <div className="font-semibold text-5xl mb-12">
           My Links
@@ -67,18 +55,18 @@ export const HoverLinks = ({ links }: HoverLinksProps) => {
 
 const ClipPathLinks = ({ links }: HoverLinksProps) => {
   return (
-    <div className="divide-y divide-neutral-900 border border-neutral-900">
-      <div className="grid grid-cols-2 divide-x divide-neutral-900">
+    <div className="divide-y dark:border-white dark:bg-neutral-900 divide-neutral-900 dark:divide-white border border-neutral-900">
+      <div className="grid grid-cols-2 divide-x divide-neutral-900 dark:divide-white">
         <LinkBox Icon={SiLinkedin} href={links.linkedin} />
         <LinkBox Icon={SiGithub} href={links.github} />
       </div>
-      <div className="grid grid-cols-4 divide-x divide-neutral-900">
+      <div className="grid grid-cols-4 divide-x divide-neutral-900 dark:divide-white">
         <LinkBox Icon={SiGmail} href={links.gmail} />
         <LinkBox Icon={MdDescription} href={links.resume} />
         <LinkBox Icon={SiLeetcode} href={links.leetcode} />
         <DiscordLinkBox Icon={SiDiscord} userName={links.discord} />
       </div>
-      <div className="grid grid-cols-3 divide-x divide-neutral-900">
+      <div className="grid grid-cols-3 divide-x divide-neutral-900 dark:divide-white">
         <LinkBox Icon={SiTwitter} href={links.twitter} />
         <LinkBox Icon={SiInstagram} href={links.instagram} />
         <LinkBox Icon={SiSpotify} href={links.spotify} />
@@ -112,7 +100,7 @@ const EXIT_KEYFRAMES: KeyframeMap = {
   right: [NO_CLIP, BOTTOM_LEFT_CLIP],
 };
 
-const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
+const   LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
   const [scope, animate] = useAnimate();
 
   const getNearestSide = (e: MouseEvent) => {
@@ -180,7 +168,7 @@ const LinkBox = ({ Icon, href }: { Icon: IconType; href: string }) => {
         style={{
           clipPath: BOTTOM_RIGHT_CLIP,
         }}
-        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
+        className="absolute inset-0 grid place-content-center dark:bg-white dark:text-neutral-700 bg-neutral-900 text-white"
       >
         <Icon className="text-xl sm:text-3xl md:text-4xl" />
       </div>
@@ -256,7 +244,7 @@ const DiscordLinkBox = ({ Icon, userName }: { Icon: IconType; userName: string }
             style={{
               clipPath: BOTTOM_RIGHT_CLIP,
             }}
-            className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
+            className="absolute inset-0 grid place-content-center bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 "
           >
             <Icon className="text-xl sm:text-3xl md:text-4xl" />
           </div>
