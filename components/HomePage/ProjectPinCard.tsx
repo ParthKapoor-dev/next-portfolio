@@ -14,6 +14,9 @@ interface ProjectPinCardProps {
 }
 
 export function ProjectPinCard({ title, href, linkTitle, description , cardClassName}: ProjectPinCardProps) {
+  
+  console.log(cardClassName)
+
   return (
     <Link target="_blank" href={href} className="h-[30rem] w-full flex items-center justify-center max-md:h-[25rem] ">
       <PinContainer
@@ -29,7 +32,7 @@ export function ProjectPinCard({ title, href, linkTitle, description , cardClass
               {description}
             </span>
           </div>
-          <div className={cn(cardClassName, "flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br") } />
+          <div className={cn("from-violet-400 via-purple-500 to-red-300" , cardClassName, "flex flex-1 w-full rounded-lg mt-4 bg-gradient-to-br") } />
         </div>
       </PinContainer>
     </Link>
