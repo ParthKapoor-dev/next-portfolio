@@ -1,0 +1,49 @@
+{
+    "aboutMeSection" : {
+        "desc" : "Hi I am Parth Kapoor . Backend App Dev @Talecto || Open Source Contributor @SSoC'24 || MERN Stack & Next JS Web Dev || React Native Expo App Dev || Junior Year COE undergrad @TIET'26"
+    },
+    "projectSection" : {
+        "side" : [
+            {
+                "title": "Create MERN JS",
+                "href": "https://github.com/parthKapoor-dev/create-mern-js",
+                "linkTitle": "@github/create-mern-js",
+                "description": "A MERN Stack Starter pack inc JWT Auth Flow , MVC File Structuring & more.",
+                "cardClassName": "from-violet-400 via-purple-500 to-red-300"
+            
+              },
+              {
+                "title": "Echo Hub",
+                "href": "https://echo-hub.vercel.app",
+                "linkTitle": "echo-hub.com",
+                "description": "A MERN Stack Newsletter Webapp with a complex Tag based Recommendation system",
+                "cardClassName": "from-blue-400 via-purple-300 to-green-500"
+            
+              },
+              {
+                "title": "Next Gen Blog Site",
+                "href": "https://nextgen-blogsite.vercel.app",
+                "linkTitle": "nextjs.blogsite.com",
+                "description": "A Next.js & Prisma based Blog Site including Google OAuth2.0",
+                "cardClassName": "from-red-400 via-yellow-300 to-blue-500"
+              }
+        ]
+    },
+    "contactMeSection" : {
+        "devLinks" : {
+            "github": "https://github.com/parthKapoor-dev/" ,
+            "linkedin": "https://www.linkedin.com/in/parthkapoor08/",
+            "twitter": "https://x.com/Parthkapoor_TE",
+            "gmail": "mailto:parthkapoor.coder@gmail.com",
+            "instagram": "https://www.instagram.com/parthkapoor_te/",
+            "leetcode": "https://leetcode.com/u/parthkapoor-dev/",
+            "resume": "https://parthkapoordev.vercel.app/resume",
+            "discord": "captain_kapoor#1267",
+            "spotify": "https://open.spotify.com/playlist/35QHh6ExS7P0afinSox4P6?si=s0okFF-gTOelM8x0AJzRGA&pi=WamU8_ezRD6Ag"
+        }
+    },
+    "resumePage" : {
+        "link" : "https://drive.google.com/file/d/1TmEDlTBRegxGgoKjMCiZI89NAeO6sIE0/view?usp=sharing" 
+    }
+
+}
