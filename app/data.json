@@ -1,22 +1,24 @@
 {
-    "aboutMeSection" : {
-        "desc" : "Hi I am Parth Kapoor . Backend App Dev @Talecto || Open Source Contributor @SSoC'24 || MERN Stack & Next JS Web Dev || React Native Expo App Dev || Junior Year COE undergrad @TIET'26"
-    },
-    "contactMeSection" : {
-        "devLinks" : {
-            "github": "https://github.com/parthKapoor-dev/" ,
-            "linkedin": "https://www.linkedin.com/in/parthkapoor08/",
-            "twitter": "https://x.com/Parthkapoor_TE",
-            "gmail": "mailto:parthkapoor.coder@gmail.com",
-            "instagram": "https://www.instagram.com/parthkapoor_te/",
-            "leetcode": "https://leetcode.com/u/parthkapoor-dev/",
-            "resume": "https://parthkapoordev.vercel.app/resume",
-            "discord": "captain_kapoor#1267",
-            "spotify": "https://open.spotify.com/playlist/35QHh6ExS7P0afinSox4P6?si=s0okFF-gTOelM8x0AJzRGA&pi=WamU8_ezRD6Ag"
-        }
-    },
-    "resumePage" : {
-        "link" : "https://drive.google.com/file/d/1TmEDlTBRegxGgoKjMCiZI89NAeO6sIE0/view?usp=sharing" 
+  "aboutMeSection": {
+    "desc": "Hi I am Parth Kapoor . Backend App Dev @Talecto || Open Source Contributor @SSoC'24 || MERN Stack & Next JS Web Dev || React Native Expo App Dev || Junior Year COE undergrad @TIET'26"
+  },
+  "contactMeSection": {
+    "devLinks": {
+      "github": "https://github.com/parthKapoor-dev/",
+      "linkedin": "https://www.linkedin.com/in/parthkapoor08/",
+      "twitter": "https://x.com/Parthkapoor_TE",
+      "gmail": "mailto:parthkapoor.coder@gmail.com",
+      "instagram": "https://www.instagram.com/parthkapoor_te/",
+      "leetcode": "https://leetcode.com/u/parthkapoor-dev/",
+      "resume": "https://parthkapoordev.vercel.app/resume",
+      "discord": "captain_kapoor#1267",
+      "spotify": "https://open.spotify.com/playlist/35QHh6ExS7P0afinSox4P6?si=s0okFF-gTOelM8x0AJzRGA&pi=WamU8_ezRD6Ag"
     }
-
+  },
+  "resumePage": {
+    "link": "https://drive.google.com/file/d/1H_W3LfgHzcaFCH_V73dhlmiAEUV1fiW-/view?usp=sharing"
+  },
+  "certificates": {
+    "sih": "https://drive.google.com/file/d/1W_nomHs1FAVmHVvOjjOy5qXVm2ko-muM/view?usp=sharing"
+  }
 }
